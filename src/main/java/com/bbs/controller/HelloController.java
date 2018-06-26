@@ -11,10 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date: 11:08 2018/6/25
  * @Modified By:
  */
-@Controller
+@RestController
 public class HelloController {
-    @RequestMapping("/login")
-    @ResponseBody
+    @RequestMapping("/hello")
     public String helloWorld() {
         return "登录成功!";
     }
