@@ -22,12 +22,13 @@ public class UserController {
      */
     @RequestMapping("")
     public String login() {
-        log.info("--------------用户登录-----------------");
+        log.info("--用户登录--");
         return "login";
     }
 
     @RequestMapping("/loginOut")
     public String loginOut() {
+        log.info("--用户注销--");
         return "loginOut";
     }
 }
