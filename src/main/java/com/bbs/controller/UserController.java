@@ -26,6 +26,10 @@ public class UserController {
         return "login";
     }
 
+    /**
+     * 用户注销
+     * @return
+     */
     @RequestMapping("/loginOut")
     public String loginOut() {
         log.info("--用户注销--");
