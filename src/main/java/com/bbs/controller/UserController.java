@@ -25,4 +25,9 @@ public class UserController {
         log.info("--------------用户登录-----------------");
         return "login";
     }
+
+    @RequestMapping("/loginOut")
+    public String loginOut() {
+        return "loginOut";
+    }
 }
