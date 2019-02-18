@@ -1,5 +1,7 @@
 package com.bbs.service;
 
+import com.bbs.entity.User;
+
 /**
  * @Author: Mr.Zhang
  * @Description:
@@ -7,4 +9,11 @@ package com.bbs.service;
  * @Modified By:
  */
 public interface UserService {
+    /**
+     * 保存用户信息
+     *
+     * @param user
+     * @return
+     */
+    boolean saveUser(User user);
 }

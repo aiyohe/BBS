@@ -1,13 +1,14 @@
-package com.bbs.dao;
+package com.bbs.dao.impl;
 
 import org.springframework.stereotype.Repository;
 
 /**
  * @Author: Mr.Zhang
  * @Description:
- * @Date: 11:27 2018/6/25
+ * @Date: 15:29 2018/7/6
  * @Modified By:
  */
-public interface UserDao {
+@Repository
+public class UserDaoImpl {
 
 }
