@@ -18,7 +18,7 @@ import java.util.List;
 public class User implements Serializable {
     @Id
    @GeneratedValue(generator = "user_id")
-    @GenericGenerator(name="user_id",strategy="assigned")
+    @GenericGenerator(name="user_id",strategy="assigned")//此处strategy表示对应的生成方法 assigned赋值
     private String userId;
     @Column
     private String userName;
