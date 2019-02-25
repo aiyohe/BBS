@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
  * @Date: 15:29 2018/7/6
  * @Modified By:
  */
-@Repository
+//@Repository
 public class UserDaoImpl {
 
 }

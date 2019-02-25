@@ -1,6 +1,10 @@
 package com.bbs.dao;
 
-import org.springframework.stereotype.Repository;
+import com.bbs.entity.User;
+import org.hibernate.event.spi.SaveOrUpdateEvent;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
 
 /**
  * @Author: Mr.Zhang
@@ -8,6 +12,7 @@ import org.springframework.stereotype.Repository;
  * @Date: 11:27 2018/6/25
  * @Modified By:
  */
-public interface UserDao {
+public interface UserDao extends JpaRepository<User,String> {
+   Optional<User> findById(String userId);
 
 }
